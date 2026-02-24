@@ -201,6 +201,11 @@ function GlowCard({
       glow: "group-hover:shadow-[0_0_40px_rgba(251,113,133,0.08)]",
       iconBg: "bg-rose-500/25",
     },
+    lime: {
+    bar: "bg-lime-400/80",
+    glow: "shadow-[0_0_40px_rgba(163,230,53,0.35)]",
+    iconBg: "bg-lime-500/15 ring-1 ring-lime-400/30",
+     },
   };
 
   const s = accents[accent];
