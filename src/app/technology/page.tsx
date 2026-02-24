@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 
-type Accent = "emerald" | "rose" | "amber" | "violet" | "cyan";
+type Accent = "emerald" | "rose" | "amber" | "violet" | "cyan" | "lime";
 
 export default function TechnologyPage() {
   return (
