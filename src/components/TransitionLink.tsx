@@ -41,7 +41,7 @@ export default function TransitionLink({
         // Only intercept same-origin navigation
         e.preventDefault();
 
-        const url = typeof href === "string" ? href : href.toString();
+        const url = String(href);
 
         // View Transitions API (Chrome/Edge/Safari TP; if unsupported -> normal push)
         // @ts-expect-error - startViewTransition is experimental
