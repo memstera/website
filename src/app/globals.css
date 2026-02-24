@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Page transitions (View Transitions API) */
+@view-transition {
+  navigation: auto;
+}
+
+/* Simple fade */
+::view-transition-old(root) {
+  animation: fade-out 180ms ease-out both;
+}
+::view-transition-new(root) {
+  animation: fade-in 220ms ease-out both;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
