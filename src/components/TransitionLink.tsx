@@ -44,11 +44,10 @@ export default function TransitionLink({
         const url = String(href);
 
         // View Transitions API (Chrome/Edge/Safari TP; if unsupported -> normal push)
-        // @ts-expect-error - startViewTransition is experimental
+       
         const startVT = typeof document !== "undefined" && document.startViewTransition;
 
         if (startVT) {
-          // @ts-expect-error - startViewTransition is experimental
           document.startViewTransition(() => {
             router.push(url);
           });
