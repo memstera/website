@@ -339,6 +339,11 @@ function ImpactPillar({
       impactBg: "bg-cyan-500/18",
       ring: "from-cyan-400/28 via-cyan-400/10 to-transparent",
     },
+    rose: {
+    iconBg: "bg-rose-500/25",
+    impactBg: "bg-rose-500/18",
+    ring: "from-rose-400/28 via-rose-400/10 to-transparent",
+    },
   };
 
   const p = palette[accent];
