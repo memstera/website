@@ -22,10 +22,10 @@ export default function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         
         {/* Logo + Brand */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-25 w-25">
+        <Link href="/" className="flex items-center">
+          <div className="relative h-25 w-25 scale-[3]">
             <Image
-              src="/logo.png"
+              src="/Logo on grey.png"
               alt="Memstera logo"
               fill
               className="object-contain"
@@ -33,9 +33,6 @@ export default function SiteHeader() {
             />
           </div>
 
-          <span className="text-xl font-semibold text-white tracking-tight">
-            Memstera
-          </span>
         </Link>
 
         {/* Navigation */}

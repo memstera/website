@@ -63,8 +63,19 @@ function Hero() {
 
       {/* Content (центр по вертикали) */}
       <div className="relative mx-auto flex min-h-[50svh] max-w-6xl flex-col items-center justify-center px-4 pt-24 pb-16 text-center sm:px-6">
-        <div className="text-3xl font-semibold tracking-[0.35em] text-white/80">
-          MEMSTERA
+        <div className="flex item-center text-5xl font-semibold text-white/80">
+          <span className="tracking-[0.35em]">mem</span>
+          
+          <span className="relative mx-[0.18em] inline-block h-[2em] w-[1.1em] translate-y-[-1.15em] -translate-x-[0.16em]">
+            <Image
+              src="/Logo small.png"
+              alt="Memstera logo small"
+              fill
+              className="object-contain"
+            />
+            </span>
+          
+          <span className="tracking-[0.35em]">tera</span>
         </div>
 
         <h1 className="mt-50 max-w-5xl text-[36px] leading-[0.98] font-semibold tracking-tight text-white sm:text-[56px] lg:text-[72px]">
